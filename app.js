@@ -7,9 +7,10 @@ document.getElementById("add-btn").addEventListener("click", function () {
   const inputValue = document.getElementById("input-value").value;
   if (inputValue == "") {
     alert("Please enter a value");
+    return false;
   } else if (!isNaN(inputValue)) {
-    alert("Please enter a string value");
-    console.log("inputValue");
+    document.getElementById("error-message").innerText =
+      "Please enter a string value";
     return false;
   } else {
     const mainContainer = document.getElementById("content-container");
