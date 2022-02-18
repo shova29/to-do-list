@@ -33,7 +33,6 @@ document.getElementById("add-btn").addEventListener("click", function () {
     }
   }
 });
-
 document.getElementById("clear-all").addEventListener("click", function (e) {
   document.getElementById("content-container").style.display = "none";
   window.location.reload();
