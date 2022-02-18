@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="text-center mt-5 text-success">TO DO LIST <i class="fa-solid fa-clipboard-list"></i></h1>
+
+    <div class="text-center container w-75 m-auto mt-5">
+        <div class="input-group mt-5">
+            <input id="input-value" class="form-control" aria-label="With textarea"></input>
+            <button id="add-btn" class="btn btn-success">Add Items</button>
+        </div>
+
+        <div class="mt-5 shadow  rounded">
+            <table class="table">
+                <thead>
+                    <tr class="text-white bg-success opacity-100">
+                        <th scope="col">Number</th>
+                        <th scope="col">description</th>
+                        <th scope="col">Delete Action</th>
+                        <th scope="col">Done Action</th>
+                    </tr>
+                </thead>
+                <tbody id="content-container" class="shadow rounded">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="clear-all-container mt-5 text-center">
+        <button class="text-center btn btn-danger" id="clear-all">
+            Clear All List
+        </button>
+    </div>
+    <!-- add script  -->
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
